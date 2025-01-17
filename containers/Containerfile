@@ -1,0 +1,6 @@
+ARG BASE_IMAGE="quay.io/fedora/fedora-bootc"
+ARG BASE_VERSION="41"
+
+FROM ${BASE_IMAGE}:${BASE_VERSION}
+
+ENTRYPOINT ["/sbin/init"]
