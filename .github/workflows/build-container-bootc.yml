@@ -1,0 +1,24 @@
+name: build container (bootc)
+run-name: building container (bootc)
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-24.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Run podman build - base
+        run: |
+          podman build -t ghcr.io/gbraad-redhat/fedora-bootc-example/fedora-bootc:latest \
+            --build-arg=BASE_IMAGE="quay.io/fedora/fedora-bootc" \
+            -f containers/Containerfile .
+      - name: Push image to ghcr.io - base
+        run: |
+          podman push --creds=${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} \
+            ghcr.io/gbraad-redhat/fedora-bootc-example/fedora-bootc:latest

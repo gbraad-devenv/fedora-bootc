@@ -1,9 +1,10 @@
-name: build qcow2 from bootc image
+name: build disk image (release)
+run-name: build disk image (release)
 on:
   workflow_dispatch:
 
 env:
-    IMAGE_NAME: ghcr.io/gbraad-devenv/fedora-bootc:latest 
+    IMAGE_NAME: ghcr.io/gbraad-redhat/fedora-bootc-example/fedora-bootc:latest
     DISK_TYPE: qcow2
     ROOTFS: xfs
     ARCH: amd64

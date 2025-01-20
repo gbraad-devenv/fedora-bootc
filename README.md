@@ -1,5 +1,4 @@
-Fedora base (Bootable) Containers
-=================================
+Fedora (Bootable) Containers example
+====================================
 
-Merged into the main Fedora images
-https://github.com/gbraad-devenv/fedora
+"From `Containerfile` to Virtual Machine"

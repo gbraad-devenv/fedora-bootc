@@ -1,7 +1,0 @@
-[customizations.installer.kickstart]
-contents = """
-
-%post
-bootc switch --mutate-in-place --transport registry @@IMAGE@@
-%end
-"""

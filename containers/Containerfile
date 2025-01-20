@@ -3,4 +3,5 @@ ARG BASE_VERSION="41"
 
 FROM ${BASE_IMAGE}:${BASE_VERSION}
 
-ENTRYPOINT ["/sbin/init"]
+RUN useradd -m -d /var/home/admin -G wheel admin \
+    && echo "admin:password" | chpasswd
