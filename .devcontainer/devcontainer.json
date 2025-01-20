@@ -1,0 +1,10 @@
+{
+    "name": "Fedora bootc example",
+    "image": "ghcr.io/gbraad-redhat/fedora-bootc-example/fedora-bootc:latest",
+
+    "runArgs": [  ],
+
+    "overrideCommand": false,
+	"privileged": true,
+    "remoteUser": "admin"
+}
