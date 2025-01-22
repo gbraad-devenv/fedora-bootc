@@ -1,12 +1,12 @@
-Fedora (Bootable) Containers example
-====================================
+Fedora bootc (Bootable Containers) example
+==========================================
 
-"From `Containerfile` to Virtual Machine"
+### "From `Containerfile` to (Virtual) Machine"
 
 
 ## Summary
 
-This repository contains the material used for the presentation "From `Containerfile` to Virtual Machine". It describes the use of [bootc](https://containers.github.io/bootc/), which uses a `Containerfile` to create a container and converts this to a virtual machine.
+This repository contains the material used for the presentation "From `Containerfile` to Virtual Machine". It describes the use of [bootc](https://containers.github.io/bootc/) (bootable containers), which uses a `Containerfile` to create a container and converts this to a (virtual) machine.
 
 
 ## Presentation
@@ -33,12 +33,9 @@ This file is named `disk.qcow2` and can be run with:
 
 ```shell
 $ sudo virt-install \
-    --name fedora-bootc \
-    --cpu host \
-    --vcpus 2 \
-    --memory 2048 \
-    --import --disk disk.qcow2 \
-    --os-variant fedora-eln
+    --name fedora-bootc --os-variant fedora-eln \
+    --cpu host --vcpus 2 --memory 2048 \
+    --import --disk disk.qcow2
 ```
 
 After the machine came up, you can log in using:
