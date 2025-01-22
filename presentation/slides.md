@@ -14,6 +14,10 @@ enableZoom: false
 enableSearch: false
 overview: true
 ---
+This slide intentionally left blank
+<!-- element class="fragment fade-out" -->
+
+---
 # Bootable
 # Containers
 
@@ -21,7 +25,7 @@ overview: true
 
 > [!NOTE]
 >  All material, including source, presentation, build workflow, containers, disk images, etc. are published on
->  https://github.com/gbraad-redhat/fedora-bootc-example
+>  [github.com/gbraad-redhat/fedora-bootc-example](https://github.com/gbraad-redhat/fedora-bootc-example)
 
 
 ---
@@ -31,10 +35,14 @@ overview: true
 ---
 
 ## From `Containerfile` 
-## to Virtual Machine
+## to (Virtual) Machine
 
-####  Gerard Braad <me@gbraad.nl>
+####  Gerard Braad, <a style="color: red; a:link">gbraad@redhat.com</a>
 <!-- element class="fragment fade-in" -->
+
+---
+
+# containers
 
 ---
 
@@ -43,22 +51,29 @@ overview: true
 ---
 ### describes content
 #### `FROM`
+<!-- element class="fragment fade-in" -->
 #### `RUN`, `USER`
+<!-- element class="fragment fade-in" -->
 #### `COPY`, `ADD`
+<!-- element class="fragment fade-in" -->
 
 ---
 
 ### what runs
 
 #### `CMD`
+<!-- element class="fragment fade-in" -->
 #### `ENTRYPOINT`
+<!-- element class="fragment fade-in" -->
 
 ---
 
 ### or describes runtime use
 
 #### `EXPOSE`
+<!-- element class="fragment fade-in" -->
 #### `VOLUME`
+<!-- element class="fragment fade-in" -->
 
 ---
 
@@ -313,7 +328,7 @@ bash-5.2# uname -na
 ```shell
 Linux 52cae56640ff 5.15.167.4-microsoft-standard-WSL2
 ```
-<!-- element class="fragment fade-in" -->
+
 
 ---
 
@@ -456,7 +471,9 @@ No rollback image present
 ---
 
 ## Forgot to include
+
 # `cowsay`
+<!-- element class="fragment fade-in" -->
 
 ---
 
@@ -476,7 +493,7 @@ Transaction Summary:
 ```shell
 Running transction
 Transaction failed: Rpm transaction failed.
-  - installing package cowsay needs 376KB more space on the / filesystem
+  - installing cowsay needs 376KB more on the / filesystem
 ```
 <!-- element class="fragment fade-in" -->
 
@@ -493,18 +510,25 @@ Transaction failed: Rpm transaction failed.
 ---
 
 ### `ostree`
+
 ### Version control system on an entire filesystem
+<!-- element class="fragment fade-in" -->
 
 ---
 
 ### `/etc`, `/var`
+
 ## to store configuration, state, ...
+<!-- element class="fragment fade-in" -->
 
 ---
 
-# Instead we 
+# Instead we
+
 # update the
+
 # `Containerfile`
+<!-- element class="fragment fade-in" -->
 
 ---
 
@@ -604,8 +628,11 @@ Current staged image: ghcr.io/.../fedora-bootc:latest
     Image version: 41.2025019.0 (...)
     Image digest: sha256:990c...
 ...
+```
+```shell
 $ sudo reboot
 ```
+<!-- element class="fragment fade-in" -->
 
 ---
 
@@ -632,6 +659,8 @@ $ cowsay Moo
 
 # Rollback
 
+---
+
 ```shell
 $ sudo bootc status
 No staged image present
@@ -652,13 +681,38 @@ Current rollback image: ghcr.io/.../fedora-bootc:latest
 ---
 
 ```shell
-$ sudo bootc status
+$ podman images
+REPOSITORY                IMAGE ID      CREATED       SIZE
+```
+```shell
+ghcr.io/.../fedora        0fafe7a42ce5  3 hours ago   164 MB
+```
+<!-- element class="fragment fade-in" -->
+```shell
+ghcr.io/.../fedora-bootc  44b1d53d7593  2 hours ago   1.85 GB
+```
+<!-- element class="fragment fade-in" -->
+
+---
+
+```shell
+$ podman run -it --rm ghcr.io/.../fedora-bootc bash
+```
+```shell
+bash-5.2# sudo bootc status
+```
+```shell
 System is not deployed via bootc.
 ```
+<!-- element class="fragment fade-in" -->
 
 ---
 
 # Mutable
+
+---
+
+# Testable
 
 ---
 
@@ -668,7 +722,7 @@ System is not deployed via bootc.
     "name": "Fedora bootc example",
     "image": "ghcr.io/.../fedora-bootc:latest",
 
-    "runArgs": [  ],
+    "runArgs": [ ],
 
     "overrideCommand": false,
 	"privileged": true,
@@ -678,6 +732,12 @@ System is not deployed via bootc.
 
 ---
 
+# `Containerfile`
+
+## describes content
+<!-- element class="fragment fade-in" -->
+
+---
 # There is more
 
 ---
@@ -697,10 +757,29 @@ System is not deployed via bootc.
 
 # Resources
 
-- https://github.com/gbraad-redhat/fedora-bootc-example
-- https://github.com/gbraad-docs/presentation-podman-libvirt
+- [github.com/gbraad-redhat/fedora-bootc-example](https://github.com/gbraad-redhat/fedora-bootc-example)
+- [github.com/gbraad-docs/presentation-podman-libvirt](https://github.com/gbraad-docs/presentation-podman-libvirt)
 
-- https://containers.github.io/bootc/
-- https://osbuild.org/docs/bootc/
-- https://gitlab.com/fedora/bootc/examples
-- https://gitlab.com/fedora/bootc/base-images
+---
+
+# Links
+
+- [containers.github.io/bootc/](https://containers.github.io/bootc/)
+- [osbuild.org/docs/bootc/](https://osbuild.org/docs/bootc/)
+- [gitlab.com/fedora/bootc/examples](https://gitlab.com/fedora/bootc/examples)
+- [gitlab.com/fedora/bootc/base-images](https://gitlab.com/fedora/bootc/base-images)
+
+---
+
+# Questions
+
+
+---
+
+# Thank you
+<!-- element class="fragment fade-out" -->
+
+---
+
+# Gerard Braad
+## <a style="color: #FF8400">me</a>@<a style="color">gbraad</a>.nl
