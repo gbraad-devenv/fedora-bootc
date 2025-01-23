@@ -1,1 +1,12 @@
-{}
+{
+  "cssTheme": "Minimal",
+  "translucency": false,
+  "theme": "obsidian",
+  "interfaceFontFamily": "Source Sans Pro",
+  "textFontFamily": "Source Sans Pro",
+  "monospaceFontFamily": "Source Code Pro",
+  "accentColor": "#0090ff",
+  "nativeMenus": false,
+  "showViewHeader": false,
+  "baseFontSize": 16
+}

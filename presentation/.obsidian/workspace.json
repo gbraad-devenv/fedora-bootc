@@ -20,19 +20,8 @@
               "icon": "lucide-file",
               "title": "slides"
             }
-          },
-          {
-            "id": "6f5665ae34f38f19",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {},
-              "icon": "slides",
-              "title": "Slide preview"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2e360d710562b418",
@@ -174,19 +164,19 @@
       "slides-extended:Show slide preview": false
     }
   },
-  "active": "a88540b91c188417",
+  "active": "1cb316b48d8ec82c",
   "lastOpenFiles": [
+    "4913",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff",
+    "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff",
-    "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff",
-    "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff",
-    "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff",
     "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff",
+    "export/slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff",
     "export/slides/plugin/chalkboard/img/whiteboard.png",
     "export/slides/plugin/chalkboard/img/sponge.png",
     "export/slides/plugin/chalkboard/img/chalk-yellow.png",
