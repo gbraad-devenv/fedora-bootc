@@ -782,4 +782,4 @@ System is not deployed via bootc.
 ---
 
 # Gerard Braad
-## <a style="color: #FF8400">me</a>@<a style="color">gbraad</a>.nl
+## <a style="color: #0F93F9">me</a><a style="color: white">@gbraad</a><a style="color: #FF8400">.nl</a>
