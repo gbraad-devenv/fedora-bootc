@@ -328,7 +328,7 @@ bash-5.2# uname -na
 ```shell
 Linux 52cae56640ff 5.15.167.4-microsoft-standard-WSL2
 ```
-
+<!-- element class="fragment fade-in" -->
 
 ---
 
