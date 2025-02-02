@@ -13,7 +13,7 @@ This repository contains the material used for the presentation "From `Container
 
 The source of the presentation is available in the `presentation` directory. The presentation is written in Markdown (revealjs) and uses Obsidian's Extended Slides plugin.
 
-An export is available at [https://gbraad-redhat.github.io/fedora-bootc-example/](https://gbraad-redhat.github.io/fedora-bootc-example/)
+An export is available at [http://docs.gbraad.nl/from-containerfile-to-virtual-machine/](http://docs.gbraad.nl/from-containerfile-to-virtual-machine/)
 
 
 ## Containers
