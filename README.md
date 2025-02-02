@@ -22,7 +22,11 @@ The `container` directory contains the `Containerfile`, which is build using the
 
 Runs of these actions can be found at [https://github.com/gbraad-redhat/fedora-bootc-example/actions](https://github.com/gbraad-redhat/fedora-bootc-example/actions)
 
-Successful builds are available at [https://github.com/orgs/gbraad-redhat/packages?repo_name=fedora-bootc-example](https://github.com/orgs/gbraad-redhat/packages?repo_name=fedora-bootc-example).
+Successful container builds are available at:
+  - https://github.com/orgs/gbraad-redhat/packages/container/package/fedora-bootc-example%2Ffedora  
+    `podman run -d ghcr.io/gbraad-redhat/fedora-bootc-example/fedora:latest`
+  - https://github.com/orgs/gbraad-redhat/packages/container/package/fedora-bootc-example%2Ffedora-bootc  
+    `ghcr.io/gbraad-redhat/fedora-bootc-example/fedora-bootc:latest`
 
 
 ## Disk image
